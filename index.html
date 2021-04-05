@@ -231,20 +231,23 @@
       <form class="write-us__form" action="https://echo.htmlacademy.ru/courses" method="post">
 
         <label class="write-us__label" for="write-us-name">Ваше имя:</label>
-        <p>
+        <p class="write-us__input-wrap">
           <input class="write-us__input" type="text" name="name" id="write-us-name" placeholder="Имя Фамилия">
         </p>
 
         <label class="write-us__label" for="write-us-email">Ваш e-mail:</label>
-        <p>
+        <p class="write-us__input-wrap">
           <input class="write-us__input" type="email" name="email" id="write-us-email" placeholder="email@example.com">
         </p>
 
         <label class="write-us__label" for="write-us-text">Текст письма:</label>
-        <p>
+        <p class="write-us__input-wrap">
           <textarea class="write-us__textarea" name="text" id="write-us-text" rows="8" cols="50" placeholder="В свободной форме"></textarea>
         </p>
-        <button class="button write-us__submit" type="submit" name="submit">Отправить</button>
+
+        <p class="write-us__submit-wrap">
+          <button class="button write-us__submit" type="submit" name="submit">Отправить</button>
+        </p>
       </form>
 
       <button class="write-us__close" type="button" name="button">Закрыть</button>
