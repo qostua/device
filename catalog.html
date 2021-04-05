@@ -55,6 +55,48 @@
         <li class="breadcrumbs__item">Моноподы для селфи</li>
       </ul>
 
+      <section class="selection-product">
+        <h2 class="selection-product__title">Фильтр:</h2>
+
+        <form class="selection-product__form" action="https://echo.htmlacademy.ru/courses" method="post">
+          <fieldset class="selection-product__group-form">
+            <legend class="selection-product__form-title"><label for="selection-product__form-range">Стоимость</label></legend>
+            <input class="selection-product__range" type="range" name="cost" id="selection-product__form-range">
+          </fieldset>
+
+          <fieldset class="selection-product__group-form">
+            <legend class="selection-product__form-title">Цвет</legend>
+            <p class="selection-product__input-wrap">
+              <label class="selection-product__lable"><input class="selection-product__checkbox" type="checkbox" name="color" value="black">Черный</label>
+            </p>
+            <p class="selection-product__input-wrap">
+              <label class="selection-product__lable"><input class="selection-product__checkbox" type="checkbox" name="color" value="white">Белый</label>
+            </p>
+            <p class="selection-product__input-wrap">
+              <label class="selection-product__lable"><input class="selection-product__checkbox" type="checkbox" name="color" value="blue">Синий</label>
+            </p>
+            <p class="selection-product__input-wrap">
+              <label class="selection-product__lable"><input class="selection-product__checkbox" type="checkbox" name="color" value="red">Красный</label>
+            </p>
+            <p class="selection-product__input-wrap">
+              <label class="selection-product__lable"><input class="selection-product__checkbox" type="checkbox" name="color" value="pink">Розовый</label>
+            </p>
+          </fieldset>
+
+          <fieldset class="selection-product__group-form">
+            <legend class="selection-product__form-title">Bluetooth</legend>
+            <p class="selection-product__input-wrap">
+              <label class="selection-product__lable"><input class="selection-product__radio" type="radio" name="bluetooth" value="on">Есть</label>
+            </p>
+            <p class="selection-product__input-wrap">
+              <label class="selection-product__lable"><input class="selection-product__radio" type="radio" name="bluetooth" value="off">Нет</label>
+            </p>
+          </fieldset>
+
+          <p class="selection-product__button-wrap"><button class="button" type="submit" name="button">Показать</button></p>
+        </form>
+      </section>
+
     </main>
 
     <footer class="footer">
