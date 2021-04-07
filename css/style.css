@@ -8,7 +8,219 @@
     src: url('../font/gilroy-light-webfont.woff2') format('woff2');
 }
 
-body {
-  font-family: "gilroyextrabold", "Arial", sans-serif;
-  /* font-family: 'Open Sans', "Arial", sans-serif; */
+.body {
+  font-family: "gilroyextrabold", Arial, sans-serif;
+}
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+.button {
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 3.6px;
+  text-decoration: none;
+  color: black;
+}
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+.text {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+}
+.active-element-opacity:hover {
+  filter: opacity(0.6);
+}
+.active-element-opacity:active {
+  filter: opacity(0.3);
+}
+
+.header {
+  background-color: #f7e296;
+}
+.header__logo {
+  font-size: 48px;
+  text-transform: uppercase;
+}
+.search-form__search {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  color: rgba(0,0,0,0.3);
+
+  background-color: inherit;
+
+  border: none;
+}
+.search-form__search:hover {
+  color: rgba(0,0,0,0.6);
+}
+.search-form__search:focus {
+  color: rgba(0,0,0,1);
+
+  outline: none;
+  border-bottom: 2px solid black;
+}
+.search-form__button {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  color: black;
+
+  background-color: inherit;
+
+  border: 2px solid black;
+}
+.search-form__button:hover {
+  color: rgba(255,255,255,1);
+
+  background-color: black;
+}
+.search-form__button:active {
+  color: rgba(255,255,255,0.3);
+}
+.account-submenu__point {
+  list-style-type: none;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+}
+.product-submenu__point {
+  list-style-type: none;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+}
+.catalog-menu__title {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+}
+.catalog-menu__item {
+  list-style-type: none;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+}
+details summary::-webkit-details-marker {
+  display: none
+}
+details > summary {
+  list-style: none;
+}
+.site-menu_item {
+  text-transform: uppercase;
+  list-style-type: none;
+  font-size: 18px;
+  letter-spacing: 3.6px;
+}
+
+/* ГЛАВНАЯ СТРАНИЦА */
+/* ГЛАВНАЯ СТРАНИЦА */
+/* ГЛАВНАЯ СТРАНИЦА */
+
+.slider-product__item {
+  list-style-type: none;
+}
+.slider-product__item-slogan {
+  font-size: 47px;
+  letter-spacing: 0.47px;
+}
+.slider-product__item-features-item {
+  list-style-type: none;
+  font-family: "gilroylight", Arial, sans-serif;
+}
+.slider-product__item-features-title {
+  font-size: 36px;
+}
+.slider-product__item-features-text {
+  font-size: 13px;
+}
+.main-catalog__item {
+  list-style-type: none;
+  font-size: 18px;
+}
+.main-service__service-name {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+}
+.main-service__service-title {
+  font-size: 47px;
+  letter-spacing: 0.47px;
+}
+.brands__item {
+  list-style-type: none;
+}
+.brands__logo {
+  filter: opacity(0.2) grayscale(1);
+}
+.brands__logo:hover {
+  filter: opacity(1) grayscale(0);
+}
+.main-about__title {
+  font-size: 47px;
+  letter-spacing: 0.47px;
+}
+.main-about__transport-item {
+  list-style-type: none;
+  font-size: 16px;
+}
+.main-contact__title {
+  font-size: 47px;
+  letter-spacing: 0.47px;
+}
+
+/* ПОДВАЛ */
+/* ПОДВАЛ */
+/* ПОДВАЛ */
+
+.footer {
+  background-color: #464646;
+  color: white;
+}
+.footer__logo {
+  font-size: 48px;
+  text-transform: uppercase;
+  color: #ffc600;
+}
+.write-us__label {
+  font-size: 18px;
+}
+.input-text {
+  border: none;
+}
+.input-text {
+  border: none;
+  background-color: rgba(229,229,229,0.5);
+
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+.input-text:hover {
+  background-color: rgba(229,229,229,0.8);
+}
+.input-text:focus {
+  border: none;
+  background-color: white;
+  outline: 3px solid rgba(240,197,46,0.5);
+}
+.input-text:not(:placeholder-shown):invalid {
+  border: none;
+  outline: none;
+  background-color: rgba(237,181,181,0.5);
+}
+.write-us__textarea {
+  resize: none;
+}
+.write-us__submit {
+  background: none;
+  border: none;
 }
