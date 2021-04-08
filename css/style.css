@@ -111,13 +111,14 @@ html {
   border: none;
 
   width: 360px;
+  height: 50px;
 
   padding-left: 38px;
 }
 .search-form__search:hover {
   color: rgba(0,0,0,0.6);
 }
-.search-form__search:focus {
+.search-form__search:focus, .search-form__search:not(:placeholder-shown) {
   color: rgba(0,0,0,1);
 
   outline: none;
@@ -134,14 +135,33 @@ html {
 
   width: 85px;
   height: 50px;
+
+  display: none;
+}
+/* появление кнопки, если поле с поиском в фокусе */
+.search-form__search:focus + .search-form__button {
+  display: block;
+}
+/* появление кнопки, если в поле с поиском есть текст */
+.search-form__search:not(:placeholder-shown) + .search-form__button {
+  display: block;
 }
 .search-form__button:hover {
   color: rgba(255,255,255,1);
 
   background-color: black;
+  display: block;
 }
 .search-form__button:active {
   color: rgba(255,255,255,0.3);
+  outline: none;
+  border-radius: none;
+  display: block;
+}
+.search-form__button:focus {
+  outline: none;
+  border-radius: none;
+  display: block;
 }
 .user-menu {
   display: flex;
@@ -241,38 +261,8 @@ html {
 
   padding-top: 4px;
 }
-.site-menu {
-  margin-left: auto;
-
-  flex-wrap: wrap;
-}
-.site-menu__list {
-  padding: 0;
-  margin: 0;
-  margin-left: auto;
-
-  width: 500px;
-
-  display: flex;
-  flex-wrap: wrap;
-}
-.site-menu_item {
-  text-transform: uppercase;
-  list-style-type: none;
-  font-size: 18px;
-  letter-spacing: 3.6px;
-
-  margin-left: 34px;
-  padding-top: 4px;
-}
-.site-menu_item:nth-child(3n + 1) {
-  margin-left: 0;
-}
-.site-menu_item:nth-child(3n + 2) {
-  margin-right: auto;
-}
-.site-menu_item:nth-child(3n) {
-  margin-right: -5px;
+.catalog-menu {
+  open: true;
 }
 .catalog-menu__title {
   padding-right: 48px;
@@ -341,6 +331,39 @@ details summary::-webkit-details-marker {
 }
 details > summary {
   list-style: none;
+}
+.site-menu {
+  margin-left: auto;
+
+  flex-wrap: wrap;
+}
+.site-menu__list {
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+
+  width: 500px;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+.site-menu_item {
+  text-transform: uppercase;
+  list-style-type: none;
+  font-size: 18px;
+  letter-spacing: 3.6px;
+
+  margin-left: 34px;
+  padding-top: 4px;
+}
+.site-menu_item:nth-child(3n + 1) {
+  margin-left: 0;
+}
+.site-menu_item:nth-child(3n + 2) {
+  margin-right: auto;
+}
+.site-menu_item:nth-child(3n) {
+  margin-right: -5px;
 }
 
 /* ГЛАВНАЯ СТРАНИЦА */
