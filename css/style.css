@@ -41,6 +41,15 @@
 .active-element-opacity:active {
   filter: opacity(0.3);
 }
+.title {
+  font-size: 47px;
+  letter-spacing: 0.47px;
+  line-height: 48px;
+}
+
+/* ШАПКА */
+/* ШАПКА */
+/* ШАПКА */
 
 .header {
   background-color: #f7e296;
@@ -48,6 +57,9 @@
 .header__logo {
   font-size: 48px;
   text-transform: uppercase;
+  line-height: 48px;
+  letter-spacing: 0.48px;
+
 }
 .search-form__search {
   font-family: "Open Sans", Arial, sans-serif;
@@ -129,8 +141,7 @@ details > summary {
   list-style-type: none;
 }
 .slider-product__item-slogan {
-  font-size: 47px;
-  letter-spacing: 0.47px;
+  line-height: 56px;
 }
 .slider-product__item-features-item {
   list-style-type: none;
@@ -151,10 +162,6 @@ details > summary {
   text-transform: uppercase;
   letter-spacing: 3.6px;
 }
-.main-service__service-title {
-  font-size: 47px;
-  letter-spacing: 0.47px;
-}
 .brands__item {
   list-style-type: none;
 }
@@ -164,17 +171,9 @@ details > summary {
 .brands__logo:hover {
   filter: opacity(1) grayscale(0);
 }
-.main-about__title {
-  font-size: 47px;
-  letter-spacing: 0.47px;
-}
 .main-about__transport-item {
   list-style-type: none;
   font-size: 16px;
-}
-.main-contact__title {
-  font-size: 47px;
-  letter-spacing: 0.47px;
 }
 
 /* ПОДВАЛ */
@@ -220,7 +219,104 @@ details > summary {
 .write-us__textarea {
   resize: none;
 }
-.write-us__submit {
+.submit-button {
   background: none;
   border: none;
+}
+
+/* КАТАЛОГ */
+/* КАТАЛОГ */
+/* КАТАЛОГ */
+
+.breadcrumbs__item {
+  list-style-type: none;
+  font-family: "Open Sans", Arial, sans-serif;
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 14px;
+}
+.selection-product {
+  background: #eee;
+}
+.selection-product__title {
+  font-size: 16px;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+
+  background-color: #dcdcdc;
+}
+.selection-product__group-form {
+  border: 0 none;
+}
+.selection-product__lable {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+.sorting {
+  background: #eee;
+}
+.sorting__title {
+  font-size: 16px;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+}
+.sorting__type-item {
+  list-style-type: none;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+}
+.sorting__order-item {
+  list-style-type: none;
+}
+.products__item {
+  list-style-type: none;
+}
+.products__item-title {
+  font-size: 18px;
+}
+.products__item-price {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+.products__item-option-item {
+  list-style-type: none;
+}
+.products__item-option-item-compare {
+  border: none;
+  background: none;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+}
+.pagination {
+  background: #ebebeb;
+}
+.pagination__nav {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 3.2px;
+}
+.pagination__nav--active:hover {
+  background-color: #d9d9d9;
+}
+.pagination__nav--active:active {
+  color: rgba(0,0,0,0.3);
+}
+.pagination__item {
+  list-style-type: none;
+  font-size: 16px;
+  color: rgba(0,0,0,0.3);
+}
+.pagination__item--not-current:hover {
+  color: rgba(0,0,0,0.6);
+}
+.pagination__item--not-current:active {
+  color: rgba(0,0,0,1);
+}
+.pagination__item--current {
+  color: black;
+}
+.pagination__item--current:hover {
+  color: black;
 }
