@@ -11,67 +11,83 @@
   <body class="body">
     <header class="header">
       <p class="header__logo">Device</p>
-      <form class="search-form" action="index.html" method="post">
-        <label class="search-form__label visually-hidden" for="search-form-text">Поиск</label>
-        <input class="search-form__search" type="search" name="text" id="search-form-text" placeholder="Поиск по сайту">
-        <button class="search-form__button" type="submit" name="button">Найти</button>
-      </form>
+      <div class="header__top-row">
+        <form class="search-form" action="index.html" method="post">
+          <label class="search-form__label visually-hidden" for="search-form-text">Поиск</label>
+          <input class="search-form__search" type="search" name="text" id="search-form-text" placeholder="Поиск по сайту">
+          <button class="search-form__button" type="submit" name="button">Найти</button>
+        </form>
 
-      <nav class="user-menu">
-        <ul class="account-submenu">
-          <li class="account-submenu__point">
-            <a class="link active-element-opacity" href="login.html">Войти</a>
-          </li>
-        </ul>
-        <ul class="product-submenu">
-          <li class="product-submenu__point">
-            <a class="link active-element-opacity" href="compare.html">Сравнить</a>
-          </li>
-          <li class="product-submenu__point">
-            <a class="link active-element-opacity" href="cart.html">Корзина</a>
-          </li>
-        </ul>
-      </nav>
+        <nav class="user-menu">
+          <ul class="account-submenu">
+            <li class="account-submenu__point account-submenu__point-login active-element-opacity">
+              <a class="link" href="login.html">Войти</a>
+            </li>
+          </ul>
+          <ul class="product-submenu">
+            <li class="product-submenu__point product-submenu__point-compare active-element-opacity">
+              <a class="link" href="compare.html">Сравнить</a>
+            </li>
+            <li class="product-submenu__point product-submenu__point-cart active-element-opacity">
+              <a class="link" href="cart.html">Корзина</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
 
-      <details class="catalog-menu">
-        <summary class="catalog-menu__title">
-          <a class="link active-element-opacity" href="catalog.html">Каталог</a>
-        </summary>
-        <ul class="catalog-menu__list">
-          <li class="catalog-menu__item">
-            <a class="link active-element-opacity" href="#">Виртуальная реальность</a>
-          </li>
-          <li class="catalog-menu__item">
-            <a class="link active-element-opacity" href="#">Моноподы для селфи</a>
-          </li>
-          <li class="catalog-menu__item">
-            <a class="link active-element-opacity" href="#">Экшн-камеры</a>
-          </li>
-          <li class="catalog-menu__item">
-            <a class="link active-element-opacity" href="#">Фитнес-браслеты</a>
-          </li>
-          <li class="catalog-menu__item">
-            <a class="link active-element-opacity" href="#">Умные часы</a>
-          </li>
-          <li class="catalog-menu__item">
-            <a class="link active-element-opacity" href="#">Квадрокоптеры</a>
-          </li>
-        </ul>
-      </details>
+      <div class="header__bottom-row">
+        <details class="catalog-menu">
+          <summary class="catalog-menu__title">
+            <a class="link active-element-opacity" href="catalog.html">Каталог товаров</a>
+          </summary>
+          <ul class="catalog-menu__columns">
+            <li class="catalog-menu__column">
+              <ul class="catalog-menu__list">
+                <li class="catalog-menu__item">
+                  <a class="link active-element-opacity" href="#">Виртуальная реальность</a>
+                </li>
+                <li class="catalog-menu__item">
+                  <a class="link active-element-opacity" href="#">Моноподы для селфи</a>
+                </li>
+                <li class="catalog-menu__item">
+                  <a class="link active-element-opacity" href="#">Экшн-камеры</a>
+                </li>
+              </ul>
+            </li>
+            <li class="catalog-menu__column">
+              <ul class="catalog-menu__list">
+                <li class="catalog-menu__item">
+                  <a class="link active-element-opacity" href="#">Фитнес-браслеты</a>
+                </li>
+                <li class="catalog-menu__item">
+                  <a class="link active-element-opacity" href="#">Умные часы</a>
+                </li>
+              </ul>
+            </li>
+            <li class="catalog-menu__column">
+              <ul class="catalog-menu__list">
+                <li class="catalog-menu__item">
+                  <a class="link active-element-opacity" href="#">Квадрокоптеры</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </details>
 
-      <nav class="site-menu">
-        <ul class="site-menu__list">
-          <li class="site-menu_item">
-            <a class="link active-element-opacity" href="delivery.html">Доставка</a>
-          </li>
-          <li class="site-menu_item">
-            <a class="link active-element-opacity" href="guarantees.html">Гарантия</a>
-          </li>
-          <li class="site-menu_item">
-            <a class="link active-element-opacity" href="contacts.html">Контакты</a>
-          </li>
-        </ul>
-      </nav>
+        <nav class="site-menu">
+          <ul class="site-menu__list">
+            <li class="site-menu_item">
+              <a class="link active-element-opacity" href="delivery.html">Доставка</a>
+            </li>
+            <li class="site-menu_item">
+              <a class="link active-element-opacity" href="guarantees.html">Гарантия</a>
+            </li>
+            <li class="site-menu_item">
+              <a class="link active-element-opacity" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main class="main">
