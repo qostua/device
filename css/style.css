@@ -65,7 +65,7 @@ html {
   position: relative;
 
   margin: 40px auto 0 auto;
-  padding: 0 60px 50px;
+  padding: 0 60px 36px;
 }
 .header__logo {
   font-size: 48px;
@@ -118,6 +118,7 @@ html {
 .search-form__search:hover {
   color: rgba(0,0,0,0.6);
 }
+/* поле поиска остается в фокусе, когда там есть текст, но не курсор */
 .search-form__search:focus, .search-form__search:not(:placeholder-shown) {
   color: rgba(0,0,0,1);
 
@@ -155,12 +156,12 @@ html {
 .search-form__button:active {
   color: rgba(255,255,255,0.3);
   outline: none;
-  border-radius: none;
+  border-radius: 0;
   display: block;
 }
 .search-form__button:focus {
   outline: none;
-  border-radius: none;
+  border-radius: 0;
   display: block;
 }
 .user-menu {
@@ -262,10 +263,11 @@ html {
   padding-top: 4px;
 }
 .catalog-menu {
-  open: true;
+
 }
 .catalog-menu__title {
   padding-right: 48px;
+  margin-top: 0;
 
   position: relative;
 }
@@ -298,16 +300,22 @@ html {
 
   padding: 0;
   margin: 0;
-  margin-top: 22px;
   position: absolute;
   right: 0px;
 
-  display: flex;
+  display: none;
 
   background-color: #f7e296;
 }
+.catalog-menu:hover .catalog-menu__columns {
+  display: flex;
+}
+.catalog-menu__columns:hover {
+  display: none;
+}
 .catalog-menu__column {
   margin-bottom: 35px;
+  margin-top: 7px;
 }
 .catalog-menu__column:nth-child(1) {
   margin-left: 60px;
@@ -325,12 +333,6 @@ html {
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 300;
   font-size: 15px;
-}
-details summary::-webkit-details-marker {
-  display: none
-}
-details > summary {
-  list-style: none;
 }
 .site-menu {
   margin-left: auto;
