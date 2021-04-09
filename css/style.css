@@ -178,12 +178,14 @@ html {
 
   margin: 0;
   padding: 0;
+
+  width: 280px;
+
+  flex-wrap: wrap;
 }
 .account-submenu__point {
   list-style-type: none;
-  font-family: "Open Sans", Arial, sans-serif;
-  font-weight: 300;
-  font-size: 15px;
+  letter-spacing: 0.15px;
   position: relative;
 }
 .account-submenu__point-login {
@@ -194,7 +196,7 @@ html {
 
   position: absolute;
   left: -26px;
-  bottom: 3px;
+  bottom: 9px;
 
   width: 13px;
   height: 12px;
@@ -203,9 +205,41 @@ html {
   background-repeat: no-repeat;
   background-position: 0;
 }
+.account-submenu__point-username {
+  margin-left: 26px;
+  display: none;
+}
+.account-submenu__point-username::before {
+  content: "";
+
+  position: absolute;
+  left: -26px;
+  bottom: 9px;
+
+  width: 13px;
+  height: 12px;
+
+  background-image: url("../img/user.svg");
+  background-repeat: no-repeat;
+  background-position: 0;
+}
+.account-submenu__point-out {
+  margin-left: 21px;
+
+  display: none;
+
+  color: rgba(0,0,0,0.3);
+}
+.account-submenu__point-out:hover {
+  color: rgba(0,0,0,0.6);
+}
+.account-submenu__point-out:active {
+  color: rgba(0,0,0,1);
+}
 .product-submenu {
   display: flex;
-  margin-left: auto;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 
   margin: 0;
   padding: 0;
@@ -218,7 +252,7 @@ html {
 
   position: relative;
 }
-.product-submenu__point-compare {
+.product-submenu__point:nth-child(2n+1) {
   margin-right: 65px;
 }
 .product-submenu__point-compare::before {

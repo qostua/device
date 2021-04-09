@@ -12,14 +12,20 @@
       <div class="header__top-row">
         <form class="search-form" action="index.html" method="post">
           <label class="search-form__label visually-hidden" for="search-form-text">Поиск</label>
-          <input class="search-form__search" type="search" name="text" id="search-form-text" placeholder="Поиск по сайту">
+          <input class="search-form__search" type="text" name="text" id="search-form-text" placeholder="Поиск по сайту" autocomplete="off">
           <button class="search-form__button" type="submit" name="button">Найти</button>
         </form>
 
         <nav class="user-menu">
           <ul class="account-submenu">
-            <li class="account-submenu__point account-submenu__point-login active-element-opacity">
+            <li class="account-submenu__point account-submenu__point-login active-element-opacity text">
               <a class="link" href="login.html">Войти</a>
+            </li>
+            <li class="account-submenu__point account-submenu__point-username active-element-opacity text">
+              <a class="link" href="login.html">Валентин Петухов</a>
+            </li>
+            <li class="account-submenu__point account-submenu__point-out text">
+              <a class="link" href="login.html">Выйти</a>
             </li>
           </ul>
           <ul class="product-submenu">
@@ -34,10 +40,10 @@
       </div>
 
       <div class="header__bottom-row">
-        <details class="catalog-menu">
-          <summary class="catalog-menu__title">
+        <nav class="catalog-menu">
+          <h2 class="catalog-menu__title">
             <a class="link active-element-opacity" href="catalog.html">Каталог товаров</a>
-          </summary>
+          </h2>
           <ul class="catalog-menu__columns">
             <li class="catalog-menu__column">
               <ul class="catalog-menu__list">
@@ -70,7 +76,7 @@
               </ul>
             </li>
           </ul>
-        </details>
+        </nav>
 
         <nav class="site-menu">
           <ul class="site-menu__list">
