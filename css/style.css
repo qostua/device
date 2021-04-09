@@ -29,7 +29,23 @@ html {
   font-size: 18px;
   letter-spacing: 3.6px;
   text-decoration: none;
-  color: black;
+  color: rgba(0,0,0,1);
+  line-height: 24px;
+  text-align: center;
+
+  padding: 8px 0;
+
+  display: block;
+
+  background-image: linear-gradient(to bottom, transparent 40%, #f0c52e 40%, #f0c52e 60%, transparent 60%);
+}
+.button:hover {
+  background-color: #f0c52e;
+}
+.button:focus {
+  background-color: #f0c52e;
+
+  color: rgba(0,0,0,0.3);
 }
 .link {
   text-decoration: none;
@@ -340,6 +356,8 @@ html {
   display: none;
 
   background-color: #f7e296;
+
+  z-index: 2;
 }
 .catalog-menu:hover .catalog-menu__columns {
   display: flex;
@@ -406,25 +424,170 @@ html {
 /* ГЛАВНАЯ СТРАНИЦА */
 /* ГЛАВНАЯ СТРАНИЦА */
 
+.slider-product {
+  width: 1160px;
+
+  margin: 0 auto;
+
+  background-image: linear-gradient(to bottom, #f7e296 114px, transparent 114px);
+
+  position: relative;
+}
+.slider-product__switch {
+  position: absolute;
+  top: 311px;
+  right: 83px;
+
+  z-index: 1;
+}
+.slider-product__radio-lable {
+  margin-left: 17px;
+}
+.slider-product__radio-lable::before {
+  content: "";
+
+  display: inline-block;
+
+  width: 12px;
+  height: 12px;
+
+  background-image: url("../img/slider-button-empty.svg");
+}
+#slider-product__radio-1:checked ~ .slider-product__switch .slider-product__radio-lable:nth-child(1)::before,
+#slider-product__radio-2:checked ~ .slider-product__switch .slider-product__radio-lable:nth-child(2)::before,
+#slider-product__radio-3:checked ~ .slider-product__switch .slider-product__radio-lable:nth-child(3)::before {
+  background-image: url("../img/slider-button.svg");
+}
+.slider-product__list {
+    padding: 0;
+    margin: 0;
+}
 .slider-product__item {
   list-style-type: none;
+
+  display: none;
+
+  position: relative;
+}
+#slider-product__radio-1:checked ~ .slider-product__list .slider-product__item:nth-child(1),
+#slider-product__radio-2:checked ~ .slider-product__list .slider-product__item:nth-child(2),
+#slider-product__radio-3:checked ~ .slider-product__list .slider-product__item:nth-child(3) {
+  display: flex;
+}
+.slider-product__radio:nth-child(1):checked ~ .slider-product__item {
+  display: none;
+}
+.slider-product__item:nth-child(1)::before {
+  content: "01";
+
+  font-size: 179.2px;
+  color: white;
+
+  position: absolute;
+  right: 50px;
+  top: -25px;
+}
+.slider-product__item:nth-child(2)::before {
+  content: "02";
+
+  font-size: 179.2px;
+  color: white;
+
+  position: absolute;
+  right: 50px;
+  top: -25px;
+}
+.slider-product__item:nth-child(3)::before {
+  content: "03";
+
+  font-size: 179.2px;
+  color: white;
+
+  position: absolute;
+  right: 50px;
+  top: -25px;
+}
+.slider-product__left-column {
+  display: flex;
+
+  width: 480px;
+
+  justify-content: center;
+  margin-bottom: auto;
+}
+.slider-product__right-column {
+  display: flex;
+  flex-direction: column;
+
+  width: 560px;
+  padding-top: 80px;
+  margin-left: auto;
+}
+.slider-product__item-img {
+  position: relative;
+}
+.slider-product__item:nth-child(1) .slider-product__item-img {
+  top: 2px;
+  left: 43px;
+}
+.slider-product__item:nth-child(2) .slider-product__item-img {
+  top: 15px;
+  left: 49px;
+}
+.slider-product__item:nth-child(3) .slider-product__item-img {
+  top: 67px;
+  left: 54px;
 }
 .slider-product__item-slogan {
   line-height: 56px;
+
+  order: -3;
+  z-index: 1;
+
+  margin-bottom: 5px;
+}
+.slider-product__item-text {
+  letter-spacing: 0.13px;
+
+  padding-right: 80px;
+
+  order: -2;
+}
+.slider-product__item-features-list {
+  margin: 0;
+  padding: 0;
+  margin-top: 5px;
+
+  display: flex;
 }
 .slider-product__item-features-item {
   list-style-type: none;
   font-family: "gilroylight", Arial, sans-serif;
+
+  margin-right: 80px;
+}
+.slider-product__item-features-item:last-child {
+  margin-right: 0px;
 }
 .slider-product__item-features-title {
   font-size: 36px;
+
+  margin-bottom: 15px;
 }
 .slider-product__item-features-text {
   font-size: 13px;
+  letter-spacing: 0.15px;
+}
+.slider-product__item-more-btn  {
+  order: -1;
+
+  width: 220px;
+
+  margin-top: 28px;
 }
 .main-catalog__item {
   list-style-type: none;
-  font-size: 18px;
+  font-size: 15px;
 }
 .main-service__service-name {
   font-size: 18px;

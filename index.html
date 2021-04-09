@@ -101,69 +101,84 @@
 
       <section class="slider-product">
         <h2 class="section-title visually-hidden">Лучшие товары</h2>
+
+        <input class="slider-product__radio visually-hidden" type="radio" name="slider" id="slider-product__radio-1" checked>
+        <input class="slider-product__radio visually-hidden" type="radio" name="slider" id="slider-product__radio-2">
+        <input class="slider-product__radio visually-hidden" type="radio" name="slider" id="slider-product__radio-3">
+
+        <p class="slider-product__switch">
+          <label class="slider-product__radio-lable" for="slider-product__radio-1"></label>
+          <label class="slider-product__radio-lable" for="slider-product__radio-2"></label>
+          <label class="slider-product__radio-lable" for="slider-product__radio-3"></label>
+        </p>
+
         <ul class="slider-product__list">
           <li class="slider-product__item">
             <h3 class="slider-product__item-title visually-hidden">Селфи-палка</h3>
-            <p class="slider-product__item-img-wrap"><img class="slider-product__item-img" src="img/selfie-stick-slider.png" width="384" height="486" alt="Фото селфи-палки в трех позициях"></p>
-            <b class="title slider-product__item-slogan">Делай селфи, <br> как Бен Стиллер!</b>
-            <p class="text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-            <ul class="slider-product__item-features-list">
-              <li class="slider-product__item-features-item">
-                <h4 class="slider-product__item-features-title">8,5 м</h4>
-                <p class="slider-product__item-features-text">Длина палки</p>
-              </li>
-              <li class="slider-product__item-features-item">
-                <h4 class="slider-product__item-features-title">5 кг</h4>
-                <p class="slider-product__item-features-text">Вес палки</p>
-              </li>
-              <li class="slider-product__item-features-item">
-                <h4 class="slider-product__item-features-title">Карбон</h4>
-                <p class="slider-product__item-features-text">Материал</p>
-              </li>
-            </ul>
-            <a class="button" href="#">Подробнее</a>
+            <div class="slider-product__left-column">
+              <img class="slider-product__item-img" src="img/selfie-stick-slider.png" width="384" height="486" alt="Фото селфи-палки в трех позициях">
+            </div>
+            <div class="slider-product__right-column">
+              <b class="title slider-product__item-slogan">Делай селфи, <br> как Бен Стиллер!</b>
+              <p class="slider-product__item-text text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+              <ul class="slider-product__item-features-list">
+                <li class="slider-product__item-features-item">
+                  <h4 class="slider-product__item-features-title">8,5 м</h4>
+                  <p class="slider-product__item-features-text">Длина палки</p>
+                </li>
+                <li class="slider-product__item-features-item">
+                  <h4 class="slider-product__item-features-title">5 кг</h4>
+                  <p class="slider-product__item-features-text">Вес палки</p>
+                </li>
+                <li class="slider-product__item-features-item">
+                  <h4 class="slider-product__item-features-title">Карбон</h4>
+                  <p class="slider-product__item-features-text">Материал</p>
+                </li>
+              </ul>
+              <a class="slider-product__item-more-btn button" href="#">Подробнее</a>
+            </div>
           </li>
 
-          <li class="slider-product__item visually-hidden">
+          <li class="slider-product__item">
             <h3 class="slider-product__item-title visually-hidden">Фитнес-браслет</h3>
-            <p class="slider-product__item-img-wrap"><img class="slider-product__item-img" src="img/fitness-bracelet-slider.png" width="345" height="485" alt="Фото фитнес-браслета"></p>
-            <b class="title slider-product__item-slogan">Худеем <br> правильно!</b>
-            <p class="text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-            <ul class="slider-product__item-features-list">
-              <li class="slider-product__item-features-item">
-                <h4 class="slider-product__item-features-title">48 часов</h4>
-                <p class="slider-product__item-features-text">Без подзарядки</p>
-              </li>
-            </ul>
-            <a class="button" href="#">Подробнее</a>
+            <div class="slider-product__left-column">
+              <img class="slider-product__item-img" src="img/fitness-bracelet-slider.png" width="345" height="485" alt="Фото фитнес-браслета">
+            </div>
+            <div class="slider-product__right-column">
+              <b class="title slider-product__item-slogan">Худеем <br> правильно!</b>
+              <p class="slider-product__item-text text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+              <ul class="slider-product__item-features-list">
+                <li class="slider-product__item-features-item">
+                  <h4 class="slider-product__item-features-title">48 часов</h4>
+                  <p class="slider-product__item-features-text">Без подзарядки</p>
+                </li>
+              </ul>
+              <a class="slider-product__item-more-btn button" href="#">Подробнее</a>
+            </div>
           </li>
 
-          <li class="slider-product__item visually-hidden">
-            <h3 class="slider-product__item-title">Квадрокоптер</h3>
-            <p class="slider-product__item-img-wrap"><img class="slider-product__item-img" src="img/quadcopter-slider.png" width="526" height="334" alt="Фото квадрокоптера"></p>
-            <b class="title slider-product__item-slogan">Порхает как бабочка, <br> жалит как пчела!</b>
-            <p class="text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-            <ul class="slider-product__item-features-list">
-              <li class="slider-product__item-features-item">
-                <h4 class="slider-product__item-features-title">800 м</h4>
-                <p class="slider-product__item-features-text">Дальность полета</p>
-              </li>
-              <li class="slider-product__item-features-item">
-                <h4 class="slider-product__item-features-title">50 м</h4>
-                <p class="slider-product__item-features-text">Радиус поражения</p>
-              </li>
-            </ul>
-            <a class="button" href="#">Подробнее</a>
+          <li class="slider-product__item">
+            <h3 class="slider-product__item-title visually-hidden">Квадрокоптер</h3>
+            <div class="slider-product__left-column">
+              <img class="slider-product__item-img" src="img/quadcopter-slider.png" width="526" height="334" alt="Фото квадрокоптера">
+            </div>
+            <div class="slider-product__right-column">
+              <b class="title slider-product__item-slogan">Порхает как бабочка, <br> жалит как пчела!</b>
+              <p class="slider-product__item-text text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+              <ul class="slider-product__item-features-list">
+                <li class="slider-product__item-features-item">
+                  <h4 class="slider-product__item-features-title">800 м</h4>
+                  <p class="slider-product__item-features-text">Дальность полета</p>
+                </li>
+                <li class="slider-product__item-features-item">
+                  <h4 class="slider-product__item-features-title">50 м</h4>
+                  <p class="slider-product__item-features-text">Радиус поражения</p>
+                </li>
+              </ul>
+              <a class="slider-product__item-more-btn button" href="#">Подробнее</a>
+            </div>
           </li>
         </ul>
-
-        <form class="slider-product__switch-form" action="https://echo.htmlacademy.ru/courses" method="post">
-          <p class="slider-product__switch-form-inner">
-            <input class="slider-product__radio" type="radio" name="slider" value="first">
-            <input class="slider-product__radio" type="radio" name="slider" value="second">
-            <input class="slider-product__radio" type="radio" name="slider" value="third">
-          </p>
-        </form>
       </section>
 
       <section class="main-catalog">
