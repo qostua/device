@@ -424,10 +424,12 @@ html {
 /* ГЛАВНАЯ СТРАНИЦА */
 /* ГЛАВНАЯ СТРАНИЦА */
 
+/* СЛАЙДЕР */
 .slider-product {
   width: 1160px;
 
   margin: 0 auto;
+  margin-bottom: 103px;
 
   background-image: linear-gradient(to bottom, #f7e296 114px, transparent 114px);
 
@@ -585,9 +587,103 @@ html {
 
   margin-top: 28px;
 }
+
+/* КАТАЛОГ */
+.main-catalog {
+  width: 1160px;
+
+  margin: 0 auto;
+}
+.main-catalog__list {
+  display: flex;
+
+  padding: 0;
+  margin: 0;
+
+  justify-content: space-between;
+}
 .main-catalog__item {
   list-style-type: none;
-  font-size: 15px;
+  font-size: 18px;
+  letter-spacing: 0.18px;
+  line-height: 24px;
+
+  display: inline-block;
+
+  position: relative;
+
+  color: rgba(0,0,0,1);
+}
+.main-catalog__item::before {
+  content: '';
+
+  display: block;
+
+  width: 160px;
+  height: 160px;
+
+  background-color: #f7e296;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: absolute;
+  bottom: 81px;
+  z-index: -1;
+}
+.main-catalog__item::after {
+  content: '';
+
+  display: block;
+
+  width: 160px;
+  height: 160px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: absolute;
+  bottom: 81px;
+  z-index: -1;
+}
+.main-catalog__item:nth-child(1)::after {
+  background-image: url("../img/popular-1.svg");
+  background-position: 50% 50%;
+}
+.main-catalog__item:nth-child(2)::after {
+  background-image: url("../img/popular-2.svg");
+  background-position: 50% 95%;
+}
+.main-catalog__item:nth-child(3)::after {
+  background-image: url("../img/popular-3.svg");
+  background-position: 56% 52%;
+}
+.main-catalog__item:nth-child(4)::after {
+  background-image: url("../img/popular-4.svg");
+  background-position: 53% 53%;
+}
+.main-catalog__item:nth-child(5)::after {
+  background-image: url("../img/popular-5.svg");
+  background-position: 53% 50%;
+}
+.main-catalog__item:nth-child(6)::after {
+  background-image: url("../img/popular-6.svg");
+  background-position: 50% 54%;
+}
+.main-catalog__item:hover::before {
+  background-color: #f0c52e;
+}
+.main-catalog__item:active::after {
+  opacity: 0.3;
+}
+.main-catalog__item:active {
+  color: rgba(0,0,0,0.3);
+}
+.main-catalog__link {
+  display: inline-block;
+
+  padding-top: 193px;
+  width: 160px;
+
 }
 .main-service__service-name {
   font-size: 18px;
