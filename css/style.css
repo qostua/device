@@ -686,6 +686,7 @@ html {
   background-image: linear-gradient(to bottom, transparent 100px, #e5e5e5 40px);
 
   padding-bottom: 68px;
+  margin-bottom: 95px;
 }
 .main-service__list {
   padding-top: 80px;
@@ -778,6 +779,20 @@ html {
   margin-bottom: 31px;
 }
 
+/* БРЕНДЫ */
+.brands {
+  width: 1160px;
+
+  margin: 0 auto;
+  margin-bottom: 102px;
+}
+.brands__list {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0;
+  padding: 0;
+}
 .brands__item {
   list-style-type: none;
 }
@@ -787,9 +802,85 @@ html {
 .brands__logo:hover {
   filter: opacity(1) grayscale(0);
 }
+
+.about-contact-section {
+  display: flex;
+  justify-content: space-between;
+
+  width: 1160px;
+
+  margin: 0 auto;
+}
+.main-about {
+  width: 480px;
+
+  position: relative;
+}
+.main-about::before {
+  content: "";
+
+  width: 80px;
+
+  position: absolute;
+  top: -13px;
+
+  border-top: 7px solid black;
+}
+.about-contact-section__text {
+  margin-bottom: 30px;
+
+  letter-spacing: 0;
+}
+.about-contact-section__text:nth-of-type(2) {
+  margin-bottom: 77px;
+}
+.main-about__transport-list {
+  padding-left: 34px;
+  margin: 0;
+  margin-bottom: 65px;
+}
 .main-about__transport-item {
   list-style-type: none;
   font-size: 16px;
+
+  margin-bottom: 22px;
+}
+.about-contact-section__buttom {
+  width: 260px;
+}
+.main-contact {
+  width: 560px;
+  height: 660px;
+
+  /* display: flex;
+  flex-direction: column; */
+
+  position: relative;
+}
+.main-contact__text {
+
+}
+.main-contact__map-wrap {
+  margin-top: 40px;
+  margin-bottom: 65px;
+}
+.main-contact__buttom {
+  display: block;
+
+  margin-top: auto;
+}
+.about-contact-section__title {
+  margin-bottom: 42px;
+}
+.main-contact::before {
+  content: "";
+
+  width: 80px;
+
+  position: absolute;
+  top: -13px;
+
+  border-top: 7px solid black;
 }
 
 /* ПОДВАЛ */
