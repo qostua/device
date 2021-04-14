@@ -13,7 +13,7 @@
       <p class="header__logo">Device</p>
       <div class="header__top-row">
         <form class="search-form" action="index.html" method="post">
-          <label class="search-form__label visually-hidden" for="search-form-text">Поиск</label>
+          <label class="visually-hidden" for="search-form-text">Поиск</label>
           <input class="text search-form__input" type="text" name="text" id="search-form-text" placeholder="Поиск по сайту" autocomplete="off">
           <button class="text search-form__button" type="submit" name="button">Найти</button>
         </form>
@@ -99,15 +99,16 @@
     </header>
 
     <main class="main">
-      <h1 class="main__title visually-hidden">Магазин гаджетов DEVICE</h1>
+      <h1 class="visually-hidden">Магазин гаджетов DEVICE</h1>
 
-      <section class="slider-product">
-        <h2 class="section-title visually-hidden">Лучшие товары</h2>
+      <section class="slider-product main__slider-product">
+        <h2 class="visually-hidden">Лучшие товары</h2>
 
         <div class="slider-product__products">
           <input class="slider-product__radio visually-hidden" type="radio" name="slider" id="slider-product__radio-1" checked>
+          <label class="slider-product__radio-lable" for="slider-product__radio-1"></label>
           <article class="slider-product__item">
-            <h3 class="slider-product__item-title visually-hidden">Селфи-палка</h3>
+            <h3 class="visually-hidden">Селфи-палка</h3>
             <div class="slider-product__left-column">
               <img class="slider-product__item-img" src="img/selfie-stick-slider.png" width="384" height="486" alt="Фото селфи-палки в трех позициях">
             </div>
@@ -133,8 +134,9 @@
           </article>
 
           <input class="slider-product__radio visually-hidden" type="radio" name="slider" id="slider-product__radio-2">
+          <label class="slider-product__radio-lable" for="slider-product__radio-2"></label>
           <article class="slider-product__item">
-            <h3 class="slider-product__item-title visually-hidden">Фитнес-браслет</h3>
+            <h3 class="visually-hidden">Фитнес-браслет</h3>
             <div class="slider-product__left-column">
               <img class="slider-product__item-img" src="img/fitness-bracelet-slider.png" width="345" height="485" alt="Фото фитнес-браслета">
             </div>
@@ -152,8 +154,9 @@
           </article>
 
           <input class="slider-product__radio visually-hidden" type="radio" name="slider" id="slider-product__radio-3">
+          <label class="slider-product__radio-lable" for="slider-product__radio-3"></label>
           <article class="slider-product__item">
-            <h3 class="slider-product__item-title visually-hidden">Квадрокоптер</h3>
+            <h3 class="visually-hidden">Квадрокоптер</h3>
             <div class="slider-product__left-column">
               <img class="slider-product__item-img" src="img/quadcopter-slider.png" width="526" height="334" alt="Фото квадрокоптера">
             </div>
@@ -173,17 +176,11 @@
               <a class="slider-product__item-more-btn button" href="#">Подробнее</a>
             </div>
           </article>
-
-          <p class="slider-product__switch">
-            <label class="slider-product__radio-lable" for="slider-product__radio-1"></label>
-            <label class="slider-product__radio-lable" for="slider-product__radio-2"></label>
-            <label class="slider-product__radio-lable" for="slider-product__radio-3"></label>
-          </p>
         </div>
       </section>
 
       <section class="main-catalog">
-        <h2 class="main-catalog__title visually-hidden">Каталог товаров</h2>
+        <h2 class="visually-hidden">Каталог товаров</h2>
         <ul class="main-catalog__list">
           <li class="main-catalog__item">
             <a class="main-catalog__link link" href="">Виртуальная реальность</a>
@@ -207,7 +204,7 @@
       </section>
 
       <section class="main-service">
-        <h2 class="main-service__title visually-hidden">Сервисы</h2>
+        <h2 class="visually-hidden">Сервисы</h2>
 
         <div class="main-service__list">
           <input class="main-service__radio visually-hidden" type="radio" name="service" id="service-radio-1" checked>
@@ -236,7 +233,7 @@
       </section>
 
       <section class="brands">
-        <h2 class="brands__title visually-hidden">Лучшие фирмы нашего магазина</h2>
+        <h2 class="visually-hidden">Лучшие фирмы нашего магазина</h2>
         <ul class="brands__list">
           <li class="brands__item"><img class="brands__logo" src="img/dji.jpg" width="260" height="100" alt="Компания DJI"></li>
           <li class="brands__item"><img class="brands__logo" src="img/sp-gadgets.jpg" width="260" height="100" alt="Компания SP Gadgets "></li>
@@ -319,7 +316,7 @@
     </footer>
 
     <section class="write-us">
-      <h2 class="write-us__title visually-hidden">Форма для связи с нами</h2>
+      <h2 class="visually-hidden">Форма для связи с нами</h2>
 
       <form class="write-us__form" action="https://echo.htmlacademy.ru/courses" method="post">
 
