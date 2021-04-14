@@ -798,20 +798,21 @@ html {
 }
 
 /* БРЕНДЫ */
-.brands {
-  width: 1160px;
-
+.main__brands {
   margin: 0 auto;
   margin-bottom: 102px;
 }
+.brands {
+  width: 1160px;
+}
 .brands__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 
   margin: 0;
   padding: 0;
-}
-.brands__item {
+
   list-style-type: none;
 }
 .brands__logo {
