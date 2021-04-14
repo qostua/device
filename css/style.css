@@ -693,14 +693,16 @@ html {
   width: 160px;
 }
 
-/* СЕРВИСЫ */
-.main-service {
+/* СЛАЙДЕР СЕРВИСОВ   */
+.main__slider-service {
+  margin-bottom: 95px;
+}
+.slider-service {
   background-image: linear-gradient(to bottom, transparent 100px, #e5e5e5 40px);
 
   padding-bottom: 68px;
-  margin-bottom: 95px;
 }
-.main-service__list {
+.slider-service__list {
   padding-top: 80px;
   padding-bottom: 41px;
 
@@ -711,13 +713,21 @@ html {
   position: relative;
   z-index: 1;
 }
-.main-service__radio:checked + .main-service__service-title {
+.slider-service__service-title {
+  width: 160px;
+
+  margin-bottom: 26px;
+  position: relative;
+}
+.slider-service__service-title:last-child {
+  margin-bottom: 0px;
+}
+.slider-service__radio:checked + .slider-service__service-title {
   background: none;
+
   color: #f0c52e;
 }
-.main-service__radio:checked + .main-service__service-title::before {
-  content: "";
-
+.slider-service__radio:checked + .slider-service__service-title::before {
   width: 280px;
   height: 40px;
 
@@ -727,20 +737,10 @@ html {
   top: 0;
   left: 0;
   z-index: -1;
-}
-.main-service__radio:checked + .main-service__service-title + .main-service__item {
-  display: block;
-}
-.main-service__service-title {
-  width: 160px;
 
-  margin-bottom: 26px;
-  position: relative;
+  content: "";
 }
-.main-service__service-title:last-child {
-  margin-bottom: 0px;
-}
-.main-service__item {
+.slider-service__item {
   display: none;
 
   border-left: 7px solid black;
@@ -754,12 +754,15 @@ html {
   width: 558px;
   height: 100%;
 }
-.main-service__item::after {
-  content: "";
-
-  position: absolute;
+.slider-service__radio:checked + .slider-service__service-title + .slider-service__item {
+  display: block;
 }
-.main-service__item:nth-of-type(1)::after {
+.slider-service__item::after {
+  position: absolute;
+
+  content: "";
+}
+.slider-service__item:nth-of-type(1)::after {
   width: 136px;
   height: 164px;
 
@@ -768,7 +771,7 @@ html {
   right: -260px;
   top: 85px;
 }
-.main-service__item:nth-of-type(2)::after {
+.slider-service__item:nth-of-type(2)::after {
   width: 171px;
   height: 195px;
 
@@ -777,7 +780,7 @@ html {
   right: -279px;
   top: 61px;
 }
-.main-service__item:nth-of-type(3)::after {
+.slider-service__item:nth-of-type(3)::after {
   width: 156px;
   height: 188px;
 
@@ -786,9 +789,12 @@ html {
   right: -255px;
   top: 61px;
 }
-.main-service__item-title {
+.slider-service__item-title {
   margin: 0;
   margin-bottom: 31px;
+}
+.slider-service__item-text {
+  margin: 0;
 }
 
 /* БРЕНДЫ */
