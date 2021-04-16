@@ -1214,11 +1214,48 @@ html {
 /* КАТАЛОГ */
 /* КАТАЛОГ */
 
+.inner-page__title {
+  width: 1040px;
+
+  margin: 0 auto;
+  margin-top: 38px;
+  margin-bottom: 28px;
+}
+.inner-page__breadcrumbs {
+  width: 1040px;
+
+  margin: 0 auto;
+}
+.breadcrumbs {
+  padding: 0;
+  margin-bottom: 49px;
+
+  display: flex;
+}
 .breadcrumbs__item {
   list-style-type: none;
   font-family: "Open Sans", Arial, sans-serif;
   color: rgba(0, 0, 0, 0.3);
   font-size: 14px;
+
+
+  margin-right: 35px;
+
+  position: relative;
+}
+.breadcrumbs__item:last-child {
+  margin-right: 0;
+}
+.breadcrumbs__item:not(:last-child)::after {
+  content: "";
+
+  position: absolute;
+  top: 5px;
+  right: -21px;
+
+  width: 4px;
+  height: 7px;
+  background-image: url("../img/nav-arrow.svg");
 }
 .selection-product {
   background: #eee;

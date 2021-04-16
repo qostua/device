@@ -7,20 +7,22 @@
     <title>Магазин гаджетов DEVICE</title>
   </head>
   <body class="body">
-    <header class="header">
+    <header class="header body__header">
       <p class="header__logo active-element-opacity"><a class="header__logo-link link" href="index.html">Device</a></p>
       <div class="header__top-row">
         <form class="search-form" action="index.html" method="post">
-          <label class="search-form__label visually-hidden" for="search-form-text">Поиск</label>
-          <input class="search-form__search" type="text" name="text" id="search-form-text" placeholder="Поиск по сайту" autocomplete="off">
-          <button class="search-form__button" type="submit" name="button">Найти</button>
+          <label class="visually-hidden" for="search-form-text">Поиск</label>
+          <input class="text search-form__input" type="text" name="text" id="search-form-text" placeholder="Поиск по сайту" autocomplete="off">
+          <button class="text search-form__button" type="submit" name="button">Найти</button>
         </form>
 
         <nav class="user-menu">
-          <ul class="account-submenu">
-            <li class="account-submenu__point account-submenu__point-login active-element-opacity text">
+          <ul class="login-submenu header__user-menu-left-column">
+            <li class="login-submenu__point login-submenu__point-login active-element-opacity text">
               <a class="link" href="login.html">Войти</a>
             </li>
+          </ul>
+          <ul class="account-submenu header__user-menu-left-column">
             <li class="account-submenu__point account-submenu__point-username active-element-opacity text">
               <a class="link" href="login.html">Валентин Петухов</a>
             </li>
@@ -28,11 +30,11 @@
               <a class="link" href="login.html">Выйти</a>
             </li>
           </ul>
-          <ul class="product-submenu">
-            <li class="product-submenu__point product-submenu__point-compare active-element-opacity">
+          <ul class="product-submenu header__user-menu-right-column">
+            <li class="product-submenu__point product-submenu__point-compare active-element-opacity text">
               <a class="link" href="compare.html">Сравнить</a>
             </li>
-            <li class="product-submenu__point product-submenu__point-cart active-element-opacity">
+            <li class="product-submenu__point product-submenu__point-cart active-element-opacity text">
               <a class="link" href="cart.html">Корзина</a>
             </li>
           </ul>
@@ -48,30 +50,30 @@
             <li class="catalog-menu__column">
               <ul class="catalog-menu__list">
                 <li class="catalog-menu__item">
-                  <a class="link active-element-opacity" href="#">Виртуальная реальность</a>
+                  <a class="active-element-opacity link text" href="#">Виртуальная реальность</a>
                 </li>
                 <li class="catalog-menu__item">
-                  <a class="link active-element-opacity" href="#">Моноподы для селфи</a>
+                  <a class="active-element-opacity link text" href="#">Моноподы для селфи</a>
                 </li>
                 <li class="catalog-menu__item">
-                  <a class="link active-element-opacity" href="#">Экшн-камеры</a>
-                </li>
-              </ul>
-            </li>
-            <li class="catalog-menu__column">
-              <ul class="catalog-menu__list">
-                <li class="catalog-menu__item">
-                  <a class="link active-element-opacity" href="#">Фитнес-браслеты</a>
-                </li>
-                <li class="catalog-menu__item">
-                  <a class="link active-element-opacity" href="#">Умные часы</a>
+                  <a class="active-element-opacity link text" href="#">Экшн-камеры</a>
                 </li>
               </ul>
             </li>
             <li class="catalog-menu__column">
               <ul class="catalog-menu__list">
                 <li class="catalog-menu__item">
-                  <a class="link active-element-opacity" href="#">Квадрокоптеры</a>
+                  <a class="active-element-opacity link text" href="#">Фитнес-браслеты</a>
+                </li>
+                <li class="catalog-menu__item">
+                  <a class="active-element-opacity link text" href="#">Умные часы</a>
+                </li>
+              </ul>
+            </li>
+            <li class="catalog-menu__column">
+              <ul class="catalog-menu__list">
+                <li class="catalog-menu__item">
+                  <a class="active-element-opacity link text" href="#">Квадрокоптеры</a>
                 </li>
               </ul>
             </li>
@@ -81,68 +83,71 @@
         <nav class="site-menu">
           <ul class="site-menu__list">
             <li class="site-menu_item">
-              <a class="link active-element-opacity" href="delivery.html">Доставка</a>
+              <a class="active-element-opacity link" href="delivery.html">Доставка</a>
             </li>
             <li class="site-menu_item">
-              <a class="link active-element-opacity" href="guarantees.html">Гарантия</a>
+              <a class="active-element-opacity link" href="guarantees.html">Гарантия</a>
             </li>
-            <li class="site-menu_item">
-              <a class="link active-element-opacity" href="contacts.html">Контакты</a>
+            <li class="site-menu_item header__site-menu-right-column">
+              <a class="active-element-opacity link" href="contacts.html">Контакты</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <main class="main">
-      <h1 class="title">Моноподы для селфи</h1>
+    <main class="inner-page">
+      <h1 class="title inner-page__title">Моноподы для селфи</h1>
 
-      <ul class="breadcrumbs">
+      <ul class="breadcrumbs inner-page__breadcrumbs">
         <li class="breadcrumbs__item"><a class="link" href="index.html">Главная</a></li>
         <li class="breadcrumbs__item"><a class="link" href="#">Каталог товаров</a></li>
         <li class="breadcrumbs__item">Моноподы для селфи</li>
       </ul>
 
-      <section class="selection-product">
-        <h2 class="selection-product__title">Фильтр:</h2>
+      <section class="selection-product inner-page__selection-product">
 
-        <form class="selection-product__form" action="https://echo.htmlacademy.ru/courses" method="post">
-          <fieldset class="selection-product__group-form">
-            <legend class="selection-product__form-title"><label for="selection-product__form-range">Стоимость</label></legend>
-            <input class="selection-product__range" type="range" name="cost" id="selection-product__form-range">
-          </fieldset>
+        <div class="selection-product__inner">
+          <h2 class="selection-product__title">Фильтр:</h2>
 
-          <fieldset class="selection-product__group-form">
-            <legend class="selection-product__form-title">Цвет</legend>
-            <p class="selection-product__input-wrap">
-              <label class="selection-product__lable"><input class="selection-product__checkbox" type="checkbox" name="color" value="black">Черный</label>
-            </p>
-            <p class="selection-product__input-wrap">
-              <label class="selection-product__lable"><input class="selection-product__checkbox" type="checkbox" name="color" value="white">Белый</label>
-            </p>
-            <p class="selection-product__input-wrap">
-              <label class="selection-product__lable"><input class="selection-product__checkbox" type="checkbox" name="color" value="blue">Синий</label>
-            </p>
-            <p class="selection-product__input-wrap">
-              <label class="selection-product__lable"><input class="selection-product__checkbox" type="checkbox" name="color" value="red">Красный</label>
-            </p>
-            <p class="selection-product__input-wrap">
-              <label class="selection-product__lable"><input class="selection-product__checkbox" type="checkbox" name="color" value="pink">Розовый</label>
-            </p>
-          </fieldset>
+          <form class="selection-product__form" action="https://echo.htmlacademy.ru/courses" method="post">
+            <fieldset class="selection-product__group-form">
+              <legend class="selection-product__form-title"><label for="selection-product__form-range">Стоимость</label></legend>
+              <input class="selection-product__range" type="range" name="cost" id="selection-product__form-range">
+            </fieldset>
 
-          <fieldset class="selection-product__group-form">
-            <legend class="selection-product__form-title">Bluetooth</legend>
-            <p class="selection-product__input-wrap">
-              <label class="selection-product__lable"><input class="selection-product__radio" type="radio" name="bluetooth" value="on">Есть</label>
-            </p>
-            <p class="selection-product__input-wrap">
-              <label class="selection-product__lable"><input class="selection-product__radio" type="radio" name="bluetooth" value="off">Нет</label>
-            </p>
-          </fieldset>
+            <fieldset class="selection-product__group-form">
+              <legend class="selection-product__form-title">Цвет</legend>
+              <p class="selection-product__input-wrap">
+                <label class="selection-product__lable"><input class="selection-product__checkbox" type="checkbox" name="color" value="black">Черный</label>
+              </p>
+              <p class="selection-product__input-wrap">
+                <label class="selection-product__lable"><input class="selection-product__checkbox" type="checkbox" name="color" value="white">Белый</label>
+              </p>
+              <p class="selection-product__input-wrap">
+                <label class="selection-product__lable"><input class="selection-product__checkbox" type="checkbox" name="color" value="blue">Синий</label>
+              </p>
+              <p class="selection-product__input-wrap">
+                <label class="selection-product__lable"><input class="selection-product__checkbox" type="checkbox" name="color" value="red">Красный</label>
+              </p>
+              <p class="selection-product__input-wrap">
+                <label class="selection-product__lable"><input class="selection-product__checkbox" type="checkbox" name="color" value="pink">Розовый</label>
+              </p>
+            </fieldset>
 
-          <p class="selection-product__button-wrap"><button class="button submit-button" type="submit" name="button">Показать</button></p>
-        </form>
+            <fieldset class="selection-product__group-form">
+              <legend class="selection-product__form-title">Bluetooth</legend>
+              <p class="selection-product__input-wrap">
+                <label class="selection-product__lable"><input class="selection-product__radio" type="radio" name="bluetooth" value="on">Есть</label>
+              </p>
+              <p class="selection-product__input-wrap">
+                <label class="selection-product__lable"><input class="selection-product__radio" type="radio" name="bluetooth" value="off">Нет</label>
+              </p>
+            </fieldset>
+
+            <p class="selection-product__button-wrap"><button class="button submit-button" type="submit" name="button">Показать</button></p>
+          </form>
+        </div>
       </section>
 
       <section class="sorting">
@@ -216,38 +221,64 @@
     </main>
 
     <footer class="footer">
-      <p class="footer__logo"><a class="link active-element-opacity" href="index.html">Device</a></p>
-      <nav class="user-menu">
-        <ul class="account-submenu">
-          <li class="account-submenu__point">
-            <a class="link active-element-opacity" href="login.html">Войти</a>
-          </li>
-        </ul>
-        <ul class="product-submenu">
-          <li class="product-submenu__point"><a class="link active-element-opacity" href="compare.html">Сравнить</a></li>
-          <li class="product-submenu__point"><a class="link active-element-opacity" href="cart.html">Корзина</a></li>
-        </ul>
-      </nav>
+      <div class="footer__inner">
+        <div class="footer__first__row">
+          <p class="footer__logo"><a class="link active-element-opacity" href="index.html">Device</a></p>
+          <nav class="user-menu footer__user-menu">
+            <ul class="login-submenu footer__user-menu-left-column">
+              <li class="login-submenu__point login-submenu__point-login active-element-opacity text">
+                <a class="link" href="login.html">Войти</a>
+              </li>
+            </ul>
+            <ul class="account-submenu footer__account-menu-left-column">
+              <li class="account-submenu__point account-submenu__point-username active-element-opacity text">
+                <a class="link" href="login.html">Валентин Петухов</a>
+              </li>
+              <li class="account-submenu__point account-submenu__point-out text">
+                <a class="link" href="login.html">Выйти</a>
+              </li>
+            </ul>
+            <ul class="product-submenu footer__user-menu-right-column">
+              <li class="product-submenu__point product-submenu__point-compare active-element-opacity text">
+                <a class="link" href="compare.html">Сравнить</a>
+              </li>
+              <li class="product-submenu__point product-submenu__point-cart active-element-opacity text">
+                <a class="link" href="cart.html">Корзина</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
 
-      <p class="text">г. Москва, ул. Строителей, 15</p>
+        <div class="footer__two__row">
+          <p class="footer__address text">г. Москва, ул. Строителей, 15</p>
 
-      <nav class="site-menu">
-        <ul class="site-menu__list">
-          <li class="site-menu_item"><a class="link active-element-opacity" href="delivery.html">Доставка</a></li>
-          <li class="site-menu_item"><a class="link active-element-opacity" href="guarantees.html">Гарантия</a></li>
-          <li class="site-menu_item"><a class="link active-element-opacity" href="contacts.html">Контакты</a></li>
-        </ul>
-      </nav>
+          <nav class="site-menu footer__site-menu">
+            <ul class="site-menu__list">
+              <li class="site-menu_item">
+                <a class="active-element-opacity link" href="delivery.html">Доставка</a>
+              </li>
+              <li class="site-menu_item">
+                <a class="active-element-opacity link" href="guarantees.html">Гарантия</a>
+              </li>
+              <li class="site-menu_item">
+                <a class="active-element-opacity link" href="contacts.html">Контакты</a>
+              </li>
+            </ul>
+          </nav>
 
-      <p class="text">Тел.: +7 (495) 495-95-95</p>
+          <p class="footer__phone text">Тел.: +7 (495) 495-95-95</p>
+        </div>
 
-      <p class="footer__social">
-        <a class="footer__social-link link" href="#">Facebook</a>
-        <a class="footer__social-link link" href="#">Instagram</a>
-        <a class="footer__social-link link" href="#">Twitter</a>
-      </p>
+        <div class="footer__three__row">
+          <p class="footer__social">
+            <a class="footer__social-link link" href="#"><span class="visually-hidden">Facebook</span></a>
+            <a class="footer__social-link link" href="#"><span class="visually-hidden">Instagram</span></a>
+            <a class="footer__social-link link" href="#"><span class="visually-hidden">Twitter</span></a>
+          </p>
 
-      <p class="footer__copyright-wrap"><a class="footer__copyright link active-element-opacity" href="https://htmlacademy.ru">HTML Academy</a></p>
+          <p class="footer__copyright-wrap"><a class="footer__copyright-link link active-element-opacity" href="https://htmlacademy.ru"><span class="visually-hidden">HTML Academy</span></a></p>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
