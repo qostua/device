@@ -135,7 +135,7 @@ html {
   text-transform: uppercase;
   line-height: 48px;
   letter-spacing: 0.48px;
-  text-indent: -30px;
+  text-indent: -3px;
 
   position: absolute;
   top: -72px;
@@ -474,7 +474,7 @@ html {
 /* ГЛАВНАЯ СТРАНИЦА */
 
 /* СЛАЙДЕР */
-.main__slider-product {
+.main-page_slider-product {
   margin: 0 auto;
   margin-bottom: 103px;
 }
@@ -640,7 +640,7 @@ html {
 
 
 /* КАТАЛОГ */
-.main__main-catalog {
+.main-page_main-catalog {
   margin: 0 auto;
   margin-bottom: 81px;
 }
@@ -736,7 +736,7 @@ html {
 }
 
 /* СЛАЙДЕР СЕРВИСОВ   */
-.main__slider-service {
+.main-page_slider-service {
   margin-bottom: 95px;
 }
 .slider-service {
@@ -840,7 +840,7 @@ html {
 }
 
 /* БРЕНДЫ */
-.main__brands {
+.main-page_brands {
   margin: 0 auto;
   margin-bottom: 89px;
 }
@@ -865,7 +865,7 @@ html {
 }
 
 /* О НАС */
-.main__about-contact {
+.main-page_about-contact {
   display: flex;
   justify-content: space-between;
 
