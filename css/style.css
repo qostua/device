@@ -1490,7 +1490,6 @@ how to remove the virtical space around the range input in IE*/
   margin: 0;
 }
 
-
 .inner-page__right-column {
   display: flex;
   flex-direction: column;
@@ -1498,22 +1497,93 @@ how to remove the virtical space around the range input in IE*/
   flex-basis: 832px;
   flex-grow: 1;
 }
+
+/* СОРТИРОВКА */
 .sorting {
   background: #eee;
+
+  display: flex;
+  align-items: center;
+
+  padding-left: 73px;
+  padding-right: 44px;
 }
 .sorting__title {
   font-size: 16px;
   letter-spacing: 3.6px;
   text-transform: uppercase;
+
+  margin: 0;
+  margin-right: 50px;
+  padding: 27px 0;
+}
+.sorting__type-list {
+  display: flex;
+
+  padding: 0;
+  margin: 0;
 }
 .sorting__type-item {
   list-style-type: none;
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
+  color: rgba(0,0,0,1);
+
+  margin-right: 30px;
+}
+.sorting__type-item--disabled {
+  color: rgba(0,0,0,0.2);
+}
+.sorting__type-item--disabled:hover {
+  color: rgba(0,0,0,0.4);
+}
+.sorting__type-item--disabled:active {
+  color: rgba(0,0,0,1);
+}
+.sorting__type-item:last-child {
+  margin-right: 0;
+}
+.sorting__order-list {
+  display: flex;
+
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
 }
 .sorting__order-item {
   list-style-type: none;
 }
+.sorting__order-item-descending {
+  display: inline-block;
+
+  width: 25px;
+  height: 10px;
+  background-image: url("../img/icon-up-dir.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+
+  margin-right: 5px;
+}
+.sorting__order-item-ascending {
+  display: inline-block;
+
+  width: 25px;
+  height: 10px;
+  background-image: url("../img/icon-down-dir.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.sorting__order-item--disabled {
+  opacity: 0.2;
+}
+.sorting__order-item--disabled:hover {
+  opacity: 0.4;
+}
+.sorting__order-item--disabled:active {
+  opacity: 1;
+}
+
+
 .products__item {
   list-style-type: none;
 }
