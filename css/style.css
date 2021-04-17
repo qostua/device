@@ -1586,6 +1586,9 @@ how to remove the virtical space around the range input in IE*/
 }
 
 /* СПИСОК ПРОДУКТОВ */
+.inner-page__products {
+  margin-bottom: 35px;
+}
 .products {
   width: 832px;
 }
@@ -1596,6 +1599,7 @@ how to remove the virtical space around the range input in IE*/
   align-items: flex-start;
 
   margin: 0;
+
   padding: 0;
   padding-left: 72px;
   padding-top: 68px;
@@ -1613,6 +1617,9 @@ how to remove the virtical space around the range input in IE*/
   position: relative;
 
   margin-bottom: 46px;
+}
+.products__item:nth-last-of-type(1), .products__item:nth-last-of-type(2) {
+  margin-bottom: 0;
 }
 .products__item--new::after {
   display: flex;
@@ -1703,13 +1710,26 @@ how to remove the virtical space around the range input in IE*/
   font-weight: 300;
 }
 
+/* ПАГИНАЦИЯ */
+.inner-page__pagination {
+  margin-left: 72px;
+  margin-bottom: 77px;
+}
 .pagination {
   background: #ebebeb;
+
+  width: 760px;
+  padding: 26px;
+
+  display: flex;
+  justify-content: space-between;
 }
 .pagination__nav {
   font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 3.2px;
+
+  min-width: 80px;
 }
 .pagination__nav--active:hover {
   background-color: #d9d9d9;
@@ -1717,10 +1737,22 @@ how to remove the virtical space around the range input in IE*/
 .pagination__nav--active:active {
   color: rgba(0,0,0,0.3);
 }
-.pagination__item {
+.pagination-list {
   list-style-type: none;
+
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+}
+.pagination__item {
   font-size: 16px;
   color: rgba(0,0,0,0.3);
+
+  margin-right: 31px;
+}
+.pagination__item:last-child {
+  margin-right: 0px;
 }
 .pagination__item--not-current:hover {
   color: rgba(0,0,0,0.6);
