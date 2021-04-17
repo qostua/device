@@ -1710,6 +1710,13 @@ how to remove the virtical space around the range input in IE*/
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 13px;
   font-weight: 300;
+  color: rgba(0,0,0,0.5);
+}
+.products__item-option-item-compare:hover {
+  color: rgba(0,0,0,1);
+}
+.products__item-option-item-compare:active {
+  color: rgba(0,0,0,0.2);
 }
 
 /* ПАГИНАЦИЯ */
