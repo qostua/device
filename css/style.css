@@ -1585,20 +1585,112 @@ how to remove the virtical space around the range input in IE*/
   opacity: 1;
 }
 
+/* СПИСОК ПРОДУКТОВ */
+.products {
+  width: 832px;
+}
+.products__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
 
+  margin: 0;
+  padding: 0;
+  padding-left: 72px;
+  padding-top: 68px;
+}
 .products__item {
   list-style-type: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  width: 360px;
+
+  position: relative;
+
+  margin-bottom: 46px;
+}
+.products__item--new::after {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+
+  content: "new";
+
+  text-transform: uppercase;
+  color: #d6d6d6;
+
+  width: 60px;
+  height: 60px;
+
+  position: absolute;
+  top: 29px;
+  right: 27px;
+
+  border: 2px solid #d6d6d6;
+  border-radius: 30px;
+}
+.products__item-img {
+  order: -1;
+  margin-bottom: 32px;
 }
 .products__item-title {
   font-size: 18px;
+  line-height: 24px;
+
+  margin: 0;
+
+  width: 260px;
 }
 .products__item-price {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 16px;
   font-weight: 300;
+  line-height: 24px;
+
+  margin: 0;
 }
-.products__item-option-item {
+.products__item-option-list {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+
   list-style-type: none;
+
+  margin: 0;
+  padding: 0;
+
+  position: absolute;
+  top: 172px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.products__item:hover .products__item-option-list {
+  display: flex;
+}
+.products__item:hover .products__item-img {
+  opacity: 0.3;
+}
+.products__item::before {
+  content: "";
+
+  position: absolute;
+  z-index: -1;
+
+  width: 360px;
+  height: 380px;
+
+  background-color: #efefef;
+}
+.products__item-option-item-cart {
+  width: 200px;
+
+  margin-bottom: 15px;
 }
 .products__item-option-item-compare {
   border: none;
@@ -1607,6 +1699,7 @@ how to remove the virtical space around the range input in IE*/
   font-size: 13px;
   font-weight: 300;
 }
+
 .pagination {
   background: #ebebeb;
 }
