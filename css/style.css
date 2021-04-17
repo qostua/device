@@ -1249,6 +1249,12 @@ html {
 .breadcrumbs__item:last-child {
   margin-right: 0;
 }
+.breadcrumbs__item--active:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+.breadcrumbs__item--active:active {
+  color: rgba(0, 0, 0, 0.1);
+}
 .breadcrumbs__item:not(:last-child)::after {
   content: "";
 
