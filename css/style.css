@@ -1031,26 +1031,28 @@ html {
 }
 .footer__two__row {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 
   margin-bottom: 48px;
 }
 .footer__address {
   margin: 0;
-  margin-right: auto;
+
+  width: 220px;
 
   letter-spacing: 0;
 }
 .footer__phone {
   margin: 0;
-  margin-left: auto;
+
+  width: 220px;
 
   letter-spacing: 0;
+  text-align: right;
 }
 .footer__site-menu {
   padding-top: 8px;
-  margin-right: 40px;
 }
 .footer .login-submenu__point::before {
   background-image: url("../img/user-footer.svg");
