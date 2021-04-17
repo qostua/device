@@ -1676,6 +1676,9 @@ how to remove the virtical space around the range input in IE*/
 .products__item:hover .products__item-img {
   opacity: 0.3;
 }
+.products__item:hover::after {
+  opacity: 0.3;
+}
 .products__item::before {
   content: "";
 
